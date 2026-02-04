@@ -14,7 +14,7 @@ const createWorld = async (canvas, debugMode = false) => {
   scene.clearColor = getColor(237, 225, 166);   
   // Создание камеры и света по умолчанию. Параметры boolean, поочереди:
   // (создать вращающуюся камеры (true, или обычную камеру - false), сделать эту камеру основной, прикрепить к canvas для управления)
-  scene.createDefaultCameraOrLight(debugMode, true, debugMode);
+  scene.createDefaultCameraOrLight(debugMode, false, debugMode);
   // Создание окружения по умолчанию, без поверхности и неба
   scene.createDefaultEnvironment({createSkybox: false, createGround: false});
   if(window.screen.width > window.screen.height){
